@@ -1,5 +1,11 @@
 # XeonProductions
 
+This is an experimental copy of my main website that I am attempting to port over from WordPress to Angular. I'm not certain if this will ever make it to production, but for right now it's an interesting idea.
+
+It currently has no backend, so all of the pages are either non-functional or static.
+
+## Technical info
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
