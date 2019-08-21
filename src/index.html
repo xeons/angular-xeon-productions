@@ -1,14 +1,410 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>XeonProductions</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" id="generate-fonts-css" href="//fonts.googleapis.com/css?family=Droid+Sans:regular,700"
+    type="text/css" media="all" />
+  <style id='generate-style-inline-css' type='text/css'>
+    .separate-containers .post-image,
+    .separate-containers .inside-article .page-header-image-single,
+    .separate-containers .inside-article .page-header-image,
+    .separate-containers .inside-article .page-header-content-single,
+    .no-sidebar .inside-article .page-header-image-single,
+    .no-sidebar .inside-article .page-header-image,
+    article .inside-article .page-header-post-image {
+      margin: -40px -40px 40px -40px
+    }
+
+    .nav-above-header {
+      padding-top: 60px
+    }
+
+    .stickynav.nav-below-header .site-header {
+      margin-bottom: 60px
+    }
+
+    body {
+      background-color: #222222;
+      color: #222222;
+    }
+
+    a,
+    a:visited {
+      color: #1e73be;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: #222222;
+    }
+
+    body .grid-container {
+      max-width: 1100px;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-family: "Droid Sans", sans-serif;
+      font-size: 15px;
+    }
+
+    .entry-content>[class*="wp-block-"]:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+
+    .main-title {
+      font-weight: 300;
+      font-size: 60px;
+    }
+
+    .main-navigation .main-nav ul ul li a {
+      font-size: 14px;
+    }
+
+    .widget-title {
+      font-weight: 300;
+    }
+
+    .sidebar .widget,
+    .footer-widgets .widget {
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-weight: 300;
+      font-size: 30px;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    .site-info {
+      font-size: 17px;
+    }
+
+    @media (max-width:768px) {
+      .main-title {
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+
+    .site-header {
+      background-color: #ffffff;
+      color: #222222;
+    }
+
+    .main-title a,
+    .main-title a:hover,
+    .main-title a:visited {
+      color: #222222;
+    }
+
+    .site-description {
+      color: #999999;
+    }
+
+    .main-navigation,
+    .main-navigation ul ul {
+      background-color: #1e72bd;
+    }
+
+    .main-navigation .main-nav ul li a,
+    .menu-toggle {
+      color: #FFFFFF;
+    }
+
+    .main-navigation .main-nav ul li:hover>a,
+    .main-navigation .main-nav ul li:focus>a,
+    .main-navigation .main-nav ul li.sfHover>a {
+      color: #ffffff;
+      background-color: #4f8bc6;
+    }
+
+    button.menu-toggle:hover,
+    button.menu-toggle:focus,
+    .main-navigation .mobile-bar-items a,
+    .main-navigation .mobile-bar-items a:hover,
+    .main-navigation .mobile-bar-items a:focus {
+      color: #FFFFFF;
+    }
+
+    .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+      color: #ffffff;
+      background-color: #4f8bc6;
+    }
+
+    .main-navigation .main-nav ul li[class*="current-menu-"]>a:hover,
+    .main-navigation .main-nav ul li[class*="current-menu-"].sfHover>a {
+      color: #ffffff;
+      background-color: #4f8bc6;
+    }
+
+    .navigation-search input[type="search"],
+    .navigation-search input[type="search"]:active {
+      color: #4f8bc6;
+      background-color: #4f8bc6;
+    }
+
+    .navigation-search input[type="search"]:focus {
+      color: #ffffff;
+      background-color: #4f8bc6;
+    }
+
+    .main-navigation ul ul {
+      background-color: #4f8bc6;
+    }
+
+    .main-navigation .main-nav ul ul li a {
+      color: #ffffff;
+    }
+
+    .main-navigation .main-nav ul ul li:hover>a,
+    .main-navigation .main-nav ul ul li:focus>a,
+    .main-navigation .main-nav ul ul li.sfHover>a {
+      color: #06529e;
+    }
+
+    .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+      color: #06529e;
+    }
+
+    .main-navigation .main-nav ul ul li[class*="current-menu-"]>a:hover,
+    .main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover>a {
+      color: #06529e;
+    }
+
+    .separate-containers .inside-article,
+    .separate-containers .comments-area,
+    .separate-containers .page-header,
+    .one-container .container,
+    .separate-containers .paging-navigation,
+    .inside-page-header {
+      color: #3a3a3a;
+      background-color: #FFFFFF;
+    }
+
+    .entry-title a,
+    .entry-title a:visited {
+      color: #1E72BD;
+    }
+
+    .entry-title a:hover {
+      color: #222222;
+    }
+
+    .entry-meta {
+      color: #888888;
+    }
+
+    .entry-meta a,
+    .entry-meta a:visited {
+      color: #666666;
+    }
+
+    .entry-meta a:hover {
+      color: #1E72BD;
+    }
+
+    .sidebar .widget {
+      color: #3a3a3a;
+      background-color: #FFFFFF;
+    }
+
+    .sidebar .widget a,
+    .sidebar .widget a:visited {
+      color: #686868;
+    }
+
+    .sidebar .widget a:hover {
+      color: #1e72bd;
+    }
+
+    .sidebar .widget .widget-title {
+      color: #000000;
+    }
+
+    .footer-widgets {
+      color: #222222;
+      background-color: #ffffff;
+    }
+
+    .footer-widgets .widget-title {
+      color: #222222;
+    }
+
+    .site-info {
+      color: #ffffff;
+      background-color: #1e72bd;
+    }
+
+    .site-info a,
+    .site-info a:visited {
+      color: #ffffff;
+    }
+
+    .site-info a:hover {
+      color: #f5f5f5;
+    }
+
+    .footer-bar .widget_nav_menu .current-menu-item a {
+      color: #f5f5f5;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="number"],
+    textarea,
+    select {
+      color: #666666;
+      background-color: #FAFAFA;
+      border-color: #CCCCCC;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="number"]:focus,
+    textarea:focus,
+    select:focus {
+      color: #666666;
+      background-color: #FFFFFF;
+      border-color: #BFBFBF;
+    }
+
+    button,
+    html input[type="button"],
+    input[type="reset"],
+    input[type="submit"],
+    a.button,
+    a.button:visited,
+    a.wp-block-button__link:not(.has-background) {
+      color: #FFFFFF;
+      background-color: #666666;
+    }
+
+    button:hover,
+    html input[type="button"]:hover,
+    input[type="reset"]:hover,
+    input[type="submit"]:hover,
+    a.button:hover,
+    button:focus,
+    html input[type="button"]:focus,
+    input[type="reset"]:focus,
+    input[type="submit"]:focus,
+    a.button:focus,
+    a.wp-block-button__link:not(.has-background):active,
+    a.wp-block-button__link:not(.has-background):focus,
+    a.wp-block-button__link:not(.has-background):hover {
+      color: #FFFFFF;
+      background-color: #606060;
+    }
+
+    .entry-content .alignwide,
+    body:not(.no-sidebar) .entry-content .alignfull {
+      margin-left: -40px;
+      width: calc(100% + 80px);
+      max-width: calc(100% + 80px);
+    }
+
+    .rtl .menu-item-has-children .dropdown-menu-toggle {
+      padding-left: 20px;
+    }
+
+    .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+      padding-right: 20px;
+    }
+
+    @media (max-width:768px) {
+
+      .separate-containers .inside-article,
+      .separate-containers .comments-area,
+      .separate-containers .page-header,
+      .separate-containers .paging-navigation,
+      .one-container .site-content,
+      .inside-page-header {
+        padding: 30px;
+      }
+
+      .entry-content .alignwide,
+      body:not(.no-sidebar) .entry-content .alignfull {
+        margin-left: -30px;
+        width: calc(100% + 60px);
+        max-width: calc(100% + 60px);
+      }
+    }
+
+    .one-container .sidebar .widget {
+      padding: 0px;
+    }
+
+    @media (max-width: 768px) {
+
+      .main-navigation .menu-toggle,
+      .main-navigation .mobile-bar-items,
+      .sidebar-nav-mobile:not(#sticky-placeholder) {
+        display: block;
+      }
+
+      .main-navigation ul,
+      .gen-sidebar-nav {
+        display: none;
+      }
+
+      [class*="nav-float-"] .site-header .inside-header>* {
+        float: none;
+        clear: both;
+      }
+    }
+
+    @font-face {
+      font-family: "GeneratePress";
+      src: url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.eot");
+      src: url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.eot#iefix") format("embedded-opentype"), url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.woff2") format("woff2"), url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.woff") format("woff"), url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.ttf") format("truetype"), url("https://xeonproductions.com/wp-content/themes/generatepress/fonts/generatepress.svg#GeneratePress") format("svg");
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+
+<body
+  class="home blog wp-embed-responsive right-sidebar nav-below-header fluid-header one-container active-footer-widgets-0 nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover">
   <app-root></app-root>
 </body>
+
 </html>
